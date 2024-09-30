@@ -4,7 +4,7 @@ import Frameworks from "./components/frameworks";
 export default function Home() {
   return (
     <div>
-      <main>
+      <main className="font-Orbitron">
         <Languages />
         <Frameworks />
       </main>

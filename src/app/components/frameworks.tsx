@@ -10,13 +10,20 @@ import LangIcon from "./langicon";
 
 export default function Frameworks() {
   return (
-    <div>
+    <div className="flex flex-col m-4">
+      <div className="flex flex-row justify-center">
+        <h1 className="font-bold text-xl">Frameworks</h1>
+      </div>
+      <div className="flex flex-row justify-center">
         <LangIcon icon={<SiReact />} title="React.js"/>
         <LangIcon icon={<SiNodedotjs />} title="Node.js"/>
         <LangIcon icon={<SiNextdotjs />} title="Next.js"/>
+      </div>
+      <div className="flex flex-row justify-center">
         <LangIcon icon={<SiTailwindcss />} title="TailwindCSS"/>
         <LangIcon icon={<SiDotnet />} title=".Net"/>
         <LangIcon icon={<SiFlutter />} title="Flutter.js"/>
+      </div>
     </div>
   )
 }

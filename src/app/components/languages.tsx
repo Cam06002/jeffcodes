@@ -11,16 +11,25 @@ import LangIcon from "./langicon";
 
 export default function Languages() {
   return (
-    <div>
-      <LangIcon icon={<IoLogoJavascript />} title="Javascript" />
-      <LangIcon icon={<IoLogoCss3 />} title="CSS"/>
-      <LangIcon icon={<IoLogoHtml5 />} title="HTML"/>
-      <LangIcon icon={<SiTypescript />} title="TypeScript"/>
-      <LangIcon icon={<TbSql />} title="SQL"/>
-      <LangIcon icon={<SiCsharp />} title="C#"/>
-      <LangIcon icon={<SiXaml />} title="XAML" />
-      <LangIcon icon={<IoLogoPython />} title="Python"/>
-      <LangIcon icon={<SiDart />} title="Dart"/>
+    <div className="flex flex-col m-4">
+      <div className="flex flex-row justify-center">
+        <h1 className="font-bold text-xl">Languages</h1>
+      </div>
+      <div className="flex flex-row justify-center">
+        <LangIcon icon={<IoLogoJavascript />} title="Javascript" />
+        <LangIcon icon={<IoLogoCss3 />} title="CSS"/>
+        <LangIcon icon={<IoLogoHtml5 />} title="HTML"/>
+      </div>
+      <div className="flex flex-row justify-center">
+        <LangIcon icon={<SiTypescript />} title="TypeScript"/>
+        <LangIcon icon={<TbSql />} title="SQL"/>
+        <LangIcon icon={<SiCsharp />} title="C#"/>
+      </div>
+      <div className="flex flex-row justify-center">
+        <LangIcon icon={<SiXaml />} title="XAML" />
+        <LangIcon icon={<IoLogoPython />} title="Python"/>
+        <LangIcon icon={<SiDart />} title="Dart"/>
+      </div>
     </div>
   );
 }
