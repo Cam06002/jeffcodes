@@ -1,5 +1,6 @@
 import Languages from "./components/languages";
 import Frameworks from "./components/frameworks";
+import Projects from "./components/projects";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="font-Orbitron">
         <Languages />
         <Frameworks />
+        <Projects />
       </main>
     </div>
   );
