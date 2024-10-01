@@ -1,6 +1,28 @@
 import ProjectWrapper from "./project-wrapper"
+import {linkBoxData} from "./linkBox"
 
 export default function Projects() {
+  const worksBetterLinks: linkBoxData = {
+    linkUrl: "https://github.com/JeffCEmploynet/worksbetter",
+    linkDescript: "Front End Code",
+    linkTwo: "https://github.com/JeffCEmploynet/WorksBetterAPI",
+    descriptTwo: "Back End Code",
+  };
+
+  const flutterTimeclockLinks: linkBoxData = {
+    linkUrl: "https://github.com/JeffCEmploynet/flutter_time_clock",
+    linkDescript: "Flutter Code Repo"
+  };
+
+  const xTextLinks: linkBoxData = {
+    linkUrl: "https://github.com/Cam06002/x-text",
+    linkDescript: "Front End Code",
+    linkTwo: "https://github.com/Cam06002/jeffing_server",
+    descriptTwo: "Back End Code",
+    linkThree: "https://jeffingtext.web.app/",
+    descriptThree: "Live Web App"
+  }
+
   return (
     <div>
       <ProjectWrapper
@@ -10,13 +32,12 @@ export default function Projects() {
       <ProjectWrapper
         title="WorksBetter"
         descript="Proof of Concept Staffing and Payroll Application"
-        linkOne="https://github.com/JeffCEmploynet/worksbetter"
-        linkTwo="https://github.com/JeffCEmploynet/WorksBetterAPI"
+        links={worksBetterLinks}
       />
       <ProjectWrapper
         title="Flutter Timeclock"
         descript="Customizable Punch Clock, created in Flutter"
-        linkOne="https://github.com/JeffCEmploynet/flutter_time_clock"
+        links={flutterTimeclockLinks}
       />
       <ProjectWrapper
         title="OAP Reconciliation Tool"
@@ -29,8 +50,7 @@ export default function Projects() {
       <ProjectWrapper
         title="XText"
         descript="Full Stack journal application"
-        linkOne="https://github.com/Cam06002/x-text"
-        linkTwo="https://jeffingtext.web.app/"
+        links={xTextLinks}
       />
     </div>
   )
