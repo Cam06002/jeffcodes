@@ -5,7 +5,7 @@ export default function ProjectWrapper(
   {title: string, descript: string, links?: any}
 ){
   return(
-    <div className="flex flex-col m-4 border-2 rounded align-middle justify-center p-2">
+    <div className="flex flex-col mx-4 mb-4 mt-2 border-2 rounded align-middle justify-center p-2">
       <h2 className="font-bold text-lg justify-center flex">{title}</h2>
       <p className="text-xs flex justify-center mb-3">{descript}</p>
       {links&&<LinkBox

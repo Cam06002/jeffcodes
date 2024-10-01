@@ -3,7 +3,7 @@ import { MdOutlineCopyright } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row justify-between text-sky-500 text-xs">
+    <div className="flex flex-row justify-between text-sky-500 text-xs align-middle p-2 border-t-2 border-slate-500">
       <FooterLinkPair
         title="Social"
         link="https://www.linkedin.com/in/jeff--campbell"
@@ -20,8 +20,8 @@ export default function Footer() {
         descriptTwo="Professional GitHub"
       />
 
-      <div className="flex flex-row text-white">
-        <MdOutlineCopyright />
+      <div className="flex flex-row text-white w-80 align-middle">
+        <p className="text-sm"><MdOutlineCopyright /></p>
         <p>2024 Jeff Campbell</p>
       </div>
     </div>
@@ -42,7 +42,7 @@ function FooterLinkPair({
   descriptTwo: string;
 }) {
   return (
-    <div className="flex flex-col w-full p-4 px-10">
+    <div className="flex flex-col w-full px-10">
       <div className="flex flex-row justify-start text-sky-500 align-middle">
         <p className="text-white text-sm mr-2">{title}:</p>
         <Link

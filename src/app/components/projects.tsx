@@ -24,34 +24,46 @@ export default function Projects() {
   }
 
   return (
-    <div>
-      <ProjectWrapper
-        title="HQ App"
-        descript="Timecard Processing Application"
-      />
-      <ProjectWrapper
-        title="WorksBetter"
-        descript="Proof of Concept Staffing and Payroll Application"
-        links={worksBetterLinks}
-      />
-      <ProjectWrapper
-        title="Flutter Timeclock"
-        descript="Customizable Punch Clock, created in Flutter"
-        links={flutterTimeclockLinks}
-      />
-      <ProjectWrapper
-        title="OAP Reconciliation Tool"
-        descript="Payment Reconciliation Tool"
-      />
-      <ProjectWrapper
-        title="Estimation Calculator"
-        descript="Gate Estimation tool, written in Python"
-      />
-      <ProjectWrapper
-        title="XText"
-        descript="Full Stack journal application"
-        links={xTextLinks}
-      />
+    <div className="flex flex-col m-4">
+      <div className="flex flex-row justify-center">
+        <h1 className="text-xl font-bold">Projects</h1>
+      </div>
+      <div className="flex flex-row">
+        <div className="flex flex-col">
+          <h3 className="text-center text-lg">Public</h3>
+          <ProjectWrapper
+            title="WorksBetter"
+            descript="Proof of Concept Staffing and Payroll Application"
+            links={worksBetterLinks}
+          />
+          <ProjectWrapper
+            title="XText"
+            descript="Full Stack journal application"
+            links={xTextLinks}
+          />
+          <ProjectWrapper
+            title="Flutter Timeclock"
+            descript="Customizable Punch Clock, created in Flutter"
+            links={flutterTimeclockLinks}
+          />
+        </div>
+
+        <div className="flex flex-col">
+          <h3 className="text-center text-lg">Private</h3>
+          <ProjectWrapper
+            title="OAP Reconciliation Tool"
+            descript="Payment Reconciliation Tool"
+          />
+          <ProjectWrapper
+            title="HQ App"
+            descript="Timecard Processing Application"
+          />
+          <ProjectWrapper
+            title="Estimation Calculator"
+            descript="Gate Estimation tool, written in Python"
+          />
+        </div>
+      </div>
     </div>
   )
 }

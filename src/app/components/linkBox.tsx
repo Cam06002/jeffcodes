@@ -11,7 +11,7 @@ export type linkBoxData = {
 
 export default function Linkbox({links} : {links: linkBoxData}) {
   return (
-    <div className="flex flex-row justify-between align-middle">
+    <div className="flex flex-row justify-center align-middle">
       <Link 
         href={links.linkUrl}
         className="hover:bg-slate-900 px-2 text-sky-500"
