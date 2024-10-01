@@ -1,4 +1,4 @@
-import ProjectWrapper from "./project-wrapper"
+import ProjectWrapper from "./projectWrapper"
 import {linkBoxData} from "./linkBox"
 
 export default function Projects() {
