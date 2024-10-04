@@ -7,4 +7,4 @@ export default function LangIcon(
             <p className="flex justify-center text-xs">{title}</p>
         </div>
     )
-}
+} 
