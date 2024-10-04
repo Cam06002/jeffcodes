@@ -13,23 +13,23 @@ import {
 export default function Projects() {
   const worksBetterLinks: linkBoxData = {
     linkUrl: "https://github.com/JeffCEmploynet/worksbetter",
-    linkDescript: <p className="flex flex-row align-middle">UI: <p className="text-xl ml-2"><IoLogoGithub /></p></p>,
+    linkDescript: <p className="flex flex-row align-middle">UI: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
     linkTwo: "https://github.com/JeffCEmploynet/WorksBetterAPI",
-    descriptTwo: <p className="flex flex-row align-middle">API: <p className="text-xl ml-2"><IoLogoGithub /></p></p>,
+    descriptTwo: <p className="flex flex-row align-middle">API: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
   };
 
   const flutterTimeclockLinks: linkBoxData = {
     linkUrl: "https://github.com/JeffCEmploynet/flutter_time_clock",
-    linkDescript: <p className="flex flex-row align-middle">UI: <p className="text-xl ml-2"><IoLogoGithub /></p></p>
+    linkDescript: <p className="flex flex-row align-middle">UI: <span className="text-xl ml-2"><IoLogoGithub /></span></p>
   };
 
   const xTextLinks: linkBoxData = {
     linkUrl: "https://github.com/Cam06002/x-text",
-    linkDescript: <p className="flex flex-row align-middle">UI: <p className="text-xl ml-2"><IoLogoGithub /></p></p>,
+    linkDescript: <p className="flex flex-row align-middle">UI: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
     linkTwo: "https://github.com/Cam06002/jeffing_server",
-    descriptTwo: <p className="flex flex-row align-middle">API: <p className="text-xl ml-2"><IoLogoGithub /></p></p>,
+    descriptTwo: <p className="flex flex-row align-middle">API: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
     linkThree: "https://jeffingtext.web.app/",
-    descriptThree: <p className="flex flex-row align-middle">App:<p className="text-2xl ml-2"><IoLink /></p></p>
+    descriptThree: <p className="flex flex-row align-middle">App:<span className="text-2xl ml-2"><IoLink /></span></p>
   }
 
   return (
@@ -42,7 +42,7 @@ export default function Projects() {
           <h3 className="text-center text-lg">Public</h3>
           <ProjectWrapper
             title="WorksBetter"
-            stack={<span><SiNextdotjs/><SiDotnet/><SiTailwindcss/></span>}
+            stack={<span className="flex flex-row justify-between"><SiNextdotjs/><SiDotnet/><SiTailwindcss/></span>}
             descript="Proof of Concept Staffing and Payroll Application"
             links={worksBetterLinks}
           />
