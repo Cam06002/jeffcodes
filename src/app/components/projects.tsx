@@ -26,6 +26,7 @@ import {
 import { TbSql } from "react-icons/tb";
 
 import Stack from "./stack";
+import { Html } from "next/document";
 
 export default function Projects() {
   const worksBetterLinks: linkBoxData = {
@@ -79,6 +80,28 @@ export default function Projects() {
     ]}
   />;
 
+  const oapStack = <Stack
+    iconList={[
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+      {logo: <IoLogoHtml5/>, type: "lang"},
+    ]}
+  />
+
+  const hpAppStack = <Stack
+    iconList={[
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+    ]}
+  />
+
+  const estimatorStack = <Stack
+    iconList={[]}
+  />
+
+
   return (
     <div className="flex flex-col m-4">
       <div className="flex flex-row justify-center">
@@ -111,18 +134,26 @@ export default function Projects() {
           <h3 className="text-center text-lg">Private</h3>
           <ProjectWrapper
             title="OAP Reconciliation Tool"
-            stack={<span></span>}
+            stack={oapStack}
             descript="Payment Reconciliation Tool"
+            descriptTwo="Automated the procees by which 
+             the accounting team was able to apply client payments to open 
+             invoices, severly cutting down on time and energy needed for this task,
+             and providing additional financial insights to management"
           />
           <ProjectWrapper
             title="HQ App"
-            stack={<span></span>}
+            stack={hpAppStack}
             descript="Timecard Processing Application"
+            descriptTwo="Created to ease hand-entry and calulation of
+            client-submitted timecards. This application was built first in
+            Python, then in C#, then in JavaScript to fulfill our changing needs."
           />
           <ProjectWrapper
             title="Estimation Calculator"
             stack={<span></span>}
             descript="Gate Estimation tool, written in Python"
+            descriptTwo=""
           />
         </div>
       </div>

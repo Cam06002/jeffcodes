@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <main className="font-Orbitron flex flex-row">
-        <div className="flex flex-col">
+        <div className="flex flex-col border-r-2">
           <Languages />
           <Frameworks />
           <Cloud />

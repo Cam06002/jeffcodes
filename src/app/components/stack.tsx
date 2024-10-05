@@ -8,13 +8,14 @@ export default function Stack(
       {iconList.map((icon:any)=>{
         return(
           <span key={icon.type} 
-          className={
-            `mr-2 
-            ${icon.type === "lang" ? "text-sky-300" : 
-              icon.type === "frame" ? "text-lime-300":
-              "text-red-300"
-            }`
-          }>
+            className={
+              `mr-2 
+              ${icon.type === "lang" ? "text-sky-300" : 
+                icon.type === "frame" ? "text-lime-300":
+                "text-red-300"
+              }`
+            }
+          >
             {icon.logo}
           </span>
         );
