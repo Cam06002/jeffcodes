@@ -8,13 +8,20 @@ import {
   SiDotnet,
   SiNodedotjs,
   SiNextdotjs,
-  SiCsharp, SiDart, SiTypescript, SiXaml
+  SiCsharp, 
+  SiDart, 
+  SiTypescript, 
+  SiXaml,
+  SiMicrosoftazure,
+  SiMongodb,
+  SiFirebase
 } from "react-icons/si";
 import {
   IoLogoJavascript,
   IoLogoCss3,
   IoLogoHtml5,
   IoLogoPython,
+  IoLogoFirebase
 } from "react-icons/io5";
 import { TbSql } from "react-icons/tb";
 
@@ -28,20 +35,29 @@ export default function Projects() {
     descriptTwo: <p className="flex flex-row align-middle">API: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
   };
 
-  const worksbetterStack = 
-    <Stack
-      iconList ={[
-        <SiNextdotjs />,
-        <SiDotnet />,
-        <SiTailwindcss/>
-      ]}
-    />
-  
+  const worksbetterStack = <Stack
+    iconList ={[
+      {logo: <SiTypescript />, type: "lang"},
+      {logo: <SiNextdotjs />, type: "frame"},
+      {logo: <SiTailwindcss/>, type: "frame"},
+      {logo: <SiCsharp />, type: "lang"},
+      {logo: <SiDotnet />, type: "frame"},
+      {logo: <SiMicrosoftazure/>, type: "cloud"},
+      {logo: <TbSql/>, type: "lang"}
+    ]}
+  />;  
 
   const flutterTimeclockLinks: linkBoxData = {
     linkUrl: "https://github.com/JeffCEmploynet/flutter_time_clock",
     linkDescript: <p className="flex flex-row align-middle">UI: <span className="text-xl ml-2"><IoLogoGithub /></span></p>
   };
+
+  const timeclockStack = <Stack
+    iconList={[
+      {logo: <SiDart/>, type: "lang"},
+      {logo: <SiFlutter/>, type: "frame"},
+    ]}
+  />;
 
   const xTextLinks: linkBoxData = {
     linkUrl: "https://github.com/Cam06002/x-text",
@@ -50,7 +66,18 @@ export default function Projects() {
     descriptTwo: <p className="flex flex-row align-middle">API: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
     linkThree: "https://jeffingtext.web.app/",
     descriptThree: <p className="flex flex-row align-middle">App:<span className="text-2xl ml-2"><IoLink /></span></p>
-  }
+  };
+
+  const xTextStack = <Stack
+    iconList={[
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <SiNodedotjs/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+      {logo: <SiMongodb/>, type: "cloud"},
+      {logo: <IoLogoFirebase/>, type: "cloud"}
+    ]}
+  />;
 
   return (
     <div className="flex flex-col m-4">
@@ -68,13 +95,13 @@ export default function Projects() {
           />
           <ProjectWrapper
             title="XText"
-            stack={<span></span>}
+            stack={xTextStack}
             descript="Full Stack journal application"
             links={xTextLinks}
           />
           <ProjectWrapper
             title="Flutter Timeclock"
-            stack={<span></span>}
+            stack={timeclockStack}
             descript="Customizable Punch Clock, created in Flutter"
             links={flutterTimeclockLinks}
           />

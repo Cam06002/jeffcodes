@@ -11,9 +11,9 @@ import LangIcon from "./langicon";
 
 export default function Languages() {
   return (
-    <div className="flex flex-col m-4">
+    <div className="flex flex-col m-4 text-sky-300">
       <div className="flex flex-row justify-center">
-        <h1 className="font-bold text-xl">Languages</h1>
+        <h1 className="font-bold text-xl text-white mb-2">Languages</h1>
       </div>
       <div className="flex flex-row justify-center">
         <LangIcon icon={<IoLogoJavascript />} title="Javascript" />

@@ -1,5 +1,6 @@
 import Languages from "./components/languages";
 import Frameworks from "./components/frameworks";
+import Cloud from "./components/cloud";
 import Projects from "./components/projects";
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
         <div className="flex flex-col">
           <Languages />
           <Frameworks />
+          <Cloud />
         </div>
         <div className="flex flex-col">
           <Projects />
