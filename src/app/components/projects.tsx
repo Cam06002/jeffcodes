@@ -8,7 +8,17 @@ import {
   SiDotnet,
   SiNodedotjs,
   SiNextdotjs,
+  SiCsharp, SiDart, SiTypescript, SiXaml
 } from "react-icons/si";
+import {
+  IoLogoJavascript,
+  IoLogoCss3,
+  IoLogoHtml5,
+  IoLogoPython,
+} from "react-icons/io5";
+import { TbSql } from "react-icons/tb";
+
+import Stack from "./stack";
 
 export default function Projects() {
   const worksBetterLinks: linkBoxData = {
@@ -17,6 +27,16 @@ export default function Projects() {
     linkTwo: "https://github.com/JeffCEmploynet/WorksBetterAPI",
     descriptTwo: <p className="flex flex-row align-middle">API: <span className="text-xl ml-2"><IoLogoGithub /></span></p>,
   };
+
+  const worksbetterStack = 
+    <Stack
+      iconList ={[
+        <SiNextdotjs />,
+        <SiDotnet />,
+        <SiTailwindcss/>
+      ]}
+    />
+  
 
   const flutterTimeclockLinks: linkBoxData = {
     linkUrl: "https://github.com/JeffCEmploynet/flutter_time_clock",
@@ -42,7 +62,7 @@ export default function Projects() {
           <h3 className="text-center text-lg">Public</h3>
           <ProjectWrapper
             title="WorksBetter"
-            stack={<span className="flex flex-row justify-between"><SiNextdotjs/><SiDotnet/><SiTailwindcss/></span>}
+            stack={worksbetterStack}
             descript="Proof of Concept Staffing and Payroll Application"
             links={worksBetterLinks}
           />
