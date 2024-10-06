@@ -128,9 +128,7 @@ export default function Projects() {
             descript="Customizable Punch Clock, created in Flutter"
             links={flutterTimeclockLinks}
           />
-        </div>
 
-        <div className="flex flex-col">
           <h3 className="text-center text-lg">Private</h3>
           <ProjectWrapper
             title="OAP Reconciliation Tool"
