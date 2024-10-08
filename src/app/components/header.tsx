@@ -1,6 +1,8 @@
+import { FaEnvelope } from "react-icons/fa";
+
 export default function Header() {
   let openBracket = "<";
-  let namer = "Jeff Codes";
+  let namer = "Jeff Campbell";
   let closeBracket = "/>";
 
   let titleHead = 
@@ -12,14 +14,12 @@ export default function Header() {
 
   return (
     <div>
-      <nav className="flex flex row h-fill w-fill p-4 align-center font-Orbitron">
+      <nav className="flex flex row h-fill w-fill px-4 py-2 align-center justify-between font-Orbitron">
         <div className="flex">
           <p className="font-Orbitron pl-4 font-bold align-text-bottom">{titleHead}</p>
         </div>
         <div className="flex">
-          <p className="pl-4 text-lg font-bold">Skills</p>
-          <p className="pl-4 text-lg font-bold">Projects</p>
-          <p className="pl-4 text-lg font-bold">Contact</p>
+          <p className="pl-4 text-3xl font-bold"><FaEnvelope /></p>
         </div>
       </nav>
     </div>

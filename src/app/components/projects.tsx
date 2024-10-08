@@ -14,7 +14,8 @@ import {
   SiXaml,
   SiMicrosoftazure,
   SiMongodb,
-  SiFirebase
+  SiFirebase,
+  SiPython
 } from "react-icons/si";
 import {
   IoLogoJavascript,
@@ -98,7 +99,9 @@ export default function Projects() {
   />
 
   const estimatorStack = <Stack
-    iconList={[]}
+    iconList={[
+      {logo: <SiPython/>, type:"lang"}
+    ]}
   />
 
 
@@ -149,9 +152,11 @@ export default function Projects() {
           />
           <ProjectWrapper
             title="Estimation Calculator"
-            stack={<span></span>}
+            stack={estimatorStack}
             descript="Gate Estimation tool, written in Python"
-            descriptTwo=""
+            descriptTwo="Created to make standard gate estimation more efficient by automating
+            calculations based on various selections in the tool. Also eliminated errors from
+            original spreadsheet calculations."
           />
         </div>
       </div>
