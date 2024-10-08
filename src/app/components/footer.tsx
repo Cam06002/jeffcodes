@@ -43,7 +43,7 @@ function FooterLinkPair({
 }) {
   return (
     <div className="flex flex-col w-full px-10">
-      <div className="flex flex-row justify-start text-sky-500 align-middle">
+      <div className="flex flex-row justify-start text-sky-300 align-middle">
         <p className="text-white text-sm mr-2">{title}:</p>
         <Link
           href={link}

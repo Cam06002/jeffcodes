@@ -7,9 +7,11 @@ import Hero from "./components/hero";
 
 export default function Home() {
   return (
-    <div className="[&::-webkit-scrollbar]:[width:10px]
+    <div
+      className="[&::-webkit-scrollbar]:[width:10px]
             [&::-webkit-scrollbar-thumb]:bg-sky-300
-            overflow-scroll">
+            overflow-scroll"
+    >
       <main className="font-Orbitron flex flex-col w-full">
         <Hero />
         <div className="flex flex-col max-w-full md:flex-row">
