@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
@@ -16,10 +17,16 @@ export default function Header() {
     <div>
       <nav className="flex flex row h-fill w-fill px-4 py-2 align-center justify-between font-Orbitron">
         <div className="flex">
-          <p className="font-Orbitron pl-4 font-bold align-text-bottom">{titleHead}</p>
+          <Link 
+            className="font-Orbitron pl-4 font-bold align-text-bottom"
+            href={"/"}
+          >{titleHead}</Link>
         </div>
         <div className="flex">
-          <p className="pl-4 text-3xl font-bold"><FaEnvelope /></p>
+          <Link 
+            className="pl-4 text-3xl font-bold"
+            href={"./contact"}
+          ><FaEnvelope /></Link>
         </div>
       </nav>
     </div>
