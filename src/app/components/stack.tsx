@@ -7,7 +7,7 @@ export default function Stack(
     <span className="flex flex-row justify-between my-2">
       {iconList.map((icon:any)=>{
         return(
-          <span key={icon.type} 
+          <span
             className={
               `mr-2 
               ${icon.type === "lang" ? "text-sky-300" : 
