@@ -19,15 +19,15 @@ const Contact: FC = () => {
   }
 
   return(
-    <div className="w-full h-full p-12 flex flex-col text-white">
-      <h3 className="text-align-center text-3xl font-bold mb-8">Contact</h3>
+    <div className="w-full h-full p-8 md:p-12 flex flex-col text-white">
+      <h3 className="text-align-center text-3xl font-bold mb-4 md:mb-8">Contact</h3>
       <form 
         className="flex flex-col"
         onSubmit={handleSubmit(onSubmit)}
       >
         <div className="flex md:flex-row align-middle my-2">
           <label 
-            className="mr-2 w-24"
+            className="mr-1 md:mr-2 w-24"
             htmlFor="email"
           >Your Email</label>
           <input 
@@ -38,7 +38,7 @@ const Contact: FC = () => {
         </div>
         <div className="flex md:flex-row content-center my-2">
           <label 
-            className="mr-2 w-24"
+            className="mr-1 md:mr-2 w-24"
             htmlFor="subject"
           >Subject</label>
           <input 
