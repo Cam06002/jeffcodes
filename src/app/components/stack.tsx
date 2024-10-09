@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function Stack(
   {iconList} : {iconList: Array<any>}
 ){
   return(
     <span className="flex flex-row justify-between my-2">
-      {iconList.map((icon:any, key: any)=>{
+      {iconList.map((icon: any, key: any)=>{
         return(
           <span
             key={key}

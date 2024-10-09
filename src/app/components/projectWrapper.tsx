@@ -1,5 +1,6 @@
 import LinkBox from "./linkBox";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function ProjectWrapper(
   {title, descript, stack, links, descriptTwo} :
   {title: string, descript: string, stack: any, links?: any, descriptTwo?: string}

@@ -14,20 +14,18 @@ import {
   SiXaml,
   SiMicrosoftazure,
   SiMongodb,
-  SiFirebase,
   SiPython
 } from "react-icons/si";
+
 import {
   IoLogoJavascript,
   IoLogoCss3,
   IoLogoHtml5,
-  IoLogoPython,
   IoLogoFirebase
 } from "react-icons/io5";
 import { TbSql } from "react-icons/tb";
 
 import Stack from "./stack";
-import { Html } from "next/document";
 
 export default function Projects() {
   const worksBetterLinks: linkBoxData = {
@@ -97,6 +95,7 @@ export default function Projects() {
       {logo: <IoLogoCss3/>, type: "lang"},
       {logo: <SiCsharp/>, type: "lang"},
       {logo: <SiDotnet/>, type: "frame"},
+      {logo: <SiXaml/>, type: "lang"},
       {logo: <SiPython/>, type: "lang"}
     ]}
   />
