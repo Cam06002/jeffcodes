@@ -108,7 +108,7 @@ export default function Projects() {
 
 
   return (
-    <div className="flex flex-col m-4">
+    <div className="flex flex-col m-4 text-white">
       <div className="flex flex-row justify-center">
         <h1 className="text-xl font-bold">Projects</h1>
       </div>
