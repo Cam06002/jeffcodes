@@ -2,11 +2,11 @@ import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
 
 export default function Header() {
-  let openBracket = "<";
-  let namer = "Jeff Campbell";
-  let closeBracket = "/>";
+  const openBracket = "<";
+  const namer = "Jeff Campbell";
+  const closeBracket = "/>";
 
-  let titleHead = 
+  const titleHead = 
   <span className="flex flex-row align-middle justify-center">
     <span className="text-xl mr-2 text-sky-300">{openBracket}</span>
     <span className="text- mt-1">{namer}</span>

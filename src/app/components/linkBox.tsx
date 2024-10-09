@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type linkBoxData = {
   linkUrl: string;
   linkDescript: any;
@@ -9,6 +10,7 @@ export type linkBoxData = {
   descriptThree?: any;
 }
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function Linkbox({links} : {links: linkBoxData}) {
   return (
     <div className="flex flex-row justify-center align-middle">

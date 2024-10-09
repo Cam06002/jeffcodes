@@ -6,7 +6,7 @@ export default function Hero(){
   return(
     <div className="bg-gradient-to-r from-sky-300 to-red-300 w-full h-80 p-12 flex flex-row mb-8 justify-between">
       <div className="flex flex-col">
-        <h1 className="text-gray-900/50 w-fit p-2 text-3xl mt-8 mb-4 font-bold">Hello, I'm Jeff Campbell</h1>
+        <h1 className="text-gray-900/50 w-fit p-2 text-3xl mt-8 mb-4 font-bold">Hello, I am Jeff Campbell</h1>
         <h3 className="text-gray-900/50 w-fit p-2 text-xl font-bold">Software Engineer and Web Developer</h3>
         <p className="text-gray-900/50 w-fit p-2">Focusing on reaching across the stack to produce performative web apps</p>
         <Link 
