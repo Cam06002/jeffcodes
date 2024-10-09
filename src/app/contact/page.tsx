@@ -19,7 +19,7 @@ const Contact: FC = () => {
   }
 
   return(
-    <div className="w-full h-full p-12 flex flex-col">
+    <div className="w-full h-full p-12 flex flex-col text-white">
       <h3 className="text-align-center text-3xl font-bold mb-8">Contact</h3>
       <form 
         className="flex flex-col"
