@@ -3,7 +3,7 @@ export default function Stack(
 ){
   return(
     <span className="flex flex-row justify-between my-2">
-      {iconList.map((icon:any, key: number)=>{
+      {iconList.map((icon:any, key: any)=>{
         return(
           <span
             key={key}
