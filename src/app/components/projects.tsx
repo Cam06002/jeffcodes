@@ -14,17 +14,20 @@ import {
   SiXaml,
   SiMicrosoftazure,
   SiMongodb,
+  SiFirebase,
   SiPython
 } from "react-icons/si";
 import {
   IoLogoJavascript,
   IoLogoCss3,
   IoLogoHtml5,
+  IoLogoPython,
   IoLogoFirebase
 } from "react-icons/io5";
 import { TbSql } from "react-icons/tb";
 
 import Stack from "./stack";
+import { Html } from "next/document";
 
 export default function Projects() {
   const worksBetterLinks: linkBoxData = {
@@ -36,13 +39,13 @@ export default function Projects() {
 
   const worksbetterStack = <Stack
     iconList ={[
-      {logo: <SiTypescript />, usage: "lang"},
-      {logo: <SiNextdotjs />, usage: "frame"},
-      {logo: <SiTailwindcss/>, usage: "frame"},
-      {logo: <SiCsharp />, usage: "lang"},
-      {logo: <SiDotnet />, usage: "frame"},
-      {logo: <SiMicrosoftazure/>, usage: "cloud"},
-      {logo: <TbSql/>, usage: "lang"}
+      {logo: <SiTypescript />, type: "lang"},
+      {logo: <SiNextdotjs />, type: "frame"},
+      {logo: <SiTailwindcss/>, type: "frame"},
+      {logo: <SiCsharp />, type: "lang"},
+      {logo: <SiDotnet />, type: "frame"},
+      {logo: <SiMicrosoftazure/>, type: "cloud"},
+      {logo: <TbSql/>, type: "lang"}
     ]}
   />;  
 
@@ -53,8 +56,8 @@ export default function Projects() {
 
   const timeclockStack = <Stack
     iconList={[
-      {logo: <SiDart/>, usage: "lang"},
-      {logo: <SiFlutter/>, usage: "frame"},
+      {logo: <SiDart/>, type: "lang"},
+      {logo: <SiFlutter/>, type: "frame"},
     ]}
   />;
 
@@ -69,38 +72,38 @@ export default function Projects() {
 
   const xTextStack = <Stack
     iconList={[
-      {logo: <IoLogoJavascript/>, usage: "lang"},
-      {logo: <SiReact/>, usage: "frame"},
-      {logo: <SiNodedotjs/>, usage: "frame"},
-      {logo: <IoLogoCss3/>, usage: "lang"},
-      {logo: <SiMongodb/>, usage: "cloud"},
-      {logo: <IoLogoFirebase/>, usage: "cloud"}
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <SiNodedotjs/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+      {logo: <SiMongodb/>, type: "cloud"},
+      {logo: <IoLogoFirebase/>, type: "cloud"}
     ]}
   />;
 
   const oapStack = <Stack
     iconList={[
-      {logo: <IoLogoJavascript/>, usage: "lang"},
-      {logo: <SiReact/>, usage: "frame"},
-      {logo: <IoLogoCss3/>, usage: "lang"},
-      {logo: <IoLogoHtml5/>, usage: "lang"},
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+      {logo: <IoLogoHtml5/>, type: "lang"},
     ]}
   />
 
   const hpAppStack = <Stack
     iconList={[
-      {logo: <IoLogoJavascript/>, usage: "lang"},
-      {logo: <SiReact/>, usage: "frame"},
-      {logo: <IoLogoCss3/>, usage: "lang"},
-      {logo: <SiXaml/>, usage: "lang"},
-      {logo: <SiCsharp/>, usage: "lang"},
-      {logo: <SiPython/>, usage: "lang"}
+      {logo: <IoLogoJavascript/>, type: "lang"},
+      {logo: <SiReact/>, type: "frame"},
+      {logo: <IoLogoCss3/>, type: "lang"},
+      {logo: <SiCsharp/>, type: "lang"},
+      {logo: <SiDotnet/>, type: "frame"},
+      {logo: <SiPython/>, type: "lang"}
     ]}
   />
 
   const estimatorStack = <Stack
     iconList={[
-      {logo: <SiPython/>, usage:"lang"}
+      {logo: <SiPython/>, type:"lang"}
     ]}
   />
 
