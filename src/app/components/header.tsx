@@ -14,21 +14,19 @@ export default function Header() {
   </span>
 
   return (
-    <div>
-      <nav className="flex flex row h-fill w-fill px-4 py-2 align-center justify-between font-Orbitron">
-        <div className="flex">
-          <Link 
-            className="font-Orbitron pl-4 font-bold align-text-bottom"
-            href={"/"}
-          >{titleHead}</Link>
-        </div>
-        <div className="flex">
-          <Link 
-            className="pl-4 text-3xl font-bold"
-            href={"./contact"}
-          ><FaEnvelope /></Link>
-        </div>
-      </nav>
-    </div>
+    <nav className="flex flex row h-fill w-fill px-4 py-2 align-center justify-between font-Orbitron text-white">
+      <div className="flex">
+        <Link 
+          className="font-Orbitron pl-4 font-bold align-text-bottom"
+          href={"/"}
+        >{titleHead}</Link>
+      </div>
+      <div className="flex">
+        <Link 
+          className="pl-4 text-3xl font-bold"
+          href={"./contact"}
+        ><FaEnvelope /></Link>
+      </div>
+    </nav>
   );
 }
