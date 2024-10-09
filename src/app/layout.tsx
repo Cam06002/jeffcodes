@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-screen w-screen">
+      <body className="flex flex-col h-screen w-screen bg-black">
         <Header />
         <main className='flex flex-row flex-grow m-2 max-w-full max-h-full rounded overflow-auto [&::-webkit-scrollbar]:[width:10px]
             [&::-webkit-scrollbar-thumb]:bg-sky-300
