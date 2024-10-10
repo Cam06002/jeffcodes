@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+import ColorCode from "../../public/images/colorCode.png";
 import Languages from "./components/languages";
 import Frameworks from "./components/frameworks";
 import Cloud from "./components/cloud";
@@ -14,6 +17,12 @@ export default function Home() {
         <meta name="description" property='og:description' content='Check out my portfolio website! A brief overview of my skills, projects, and experience.'/>
         <meta name="url" property='og:url' content='https://jeffcodes.vercel.app'/>
       </head>
+      <div className="hidden">
+        <Image
+          src={ColorCode}
+          alt="colorful zeros and ones on a black background"
+        />
+      </div>
       <Hero />
       <div className="flex flex-col max-w-full md:flex-row">
         <div className="flex flex-row flex-wrap md:flex-col md:justify-start justify-center border-r-2 w-fit">
