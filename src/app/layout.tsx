@@ -16,15 +16,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <title>Jeff Campbell - Portfolio</title>
-        <meta
-          name="description"
-          content="Check out the portfolio website for Jeff Campbell!"
-          key="desc"
-        />
-      </Head>
       <body className="flex flex-col h-screen w-screen bg-black">
         <Header />
         <main className='flex flex-row flex-grow m-2 max-w-full max-h-full rounded overflow-auto [&::-webkit-scrollbar]:[width:10px]
