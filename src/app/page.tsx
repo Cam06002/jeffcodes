@@ -1,5 +1,3 @@
-// import Head from "next/head";
-
 import Languages from "./components/languages";
 import Frameworks from "./components/frameworks";
 import Cloud from "./components/cloud";
@@ -12,8 +10,8 @@ export default function Home() {
     <main className="font-Orbitron flex flex-col w-full">
       <head>
         <meta name="title" property='og:title' content='Jeff Codes'/>
-        <meta name="image" property='og:image' content='../../public/images/colorCode.png'/>
-        <meta name="description" property='og:description' content='Jeff Campbell - Portfolio'/>
+        <meta name="image" property='og:image' content='https://jeffcodes.vercel.app/_next/static/media/colorCode.png'/>
+        <meta name="description" property='og:description' content='Check out my portfolio website! A brief overview of my skills, projects, and experience.'/>
         <meta name="url" property='og:url' content='https://jeffcodes.vercel.app'/>
       </head>
       <Hero />
