@@ -74,7 +74,7 @@ const Contact: FC = () => {
       
       {showThankYou&&<>
         <h3 className="text-align-center text-3xl font-bold mb-4 md:mb-8">Thank You for Reaching Out</h3>
-        <p>I'll respond to you as soon as I can!</p>
+        <p>I will be in touch soon!</p>
       </>}
     </div>
   )
