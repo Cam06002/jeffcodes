@@ -3,7 +3,7 @@ import { MdOutlineCopyright } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row justify-between text-sky-500 text-xs align-middle p-2 border-t-2 border-slate-500">
+    <div className="flex flex-row justify-between text-sky-500 text-xs align-middle p-2 border-t-2 border-slate-500 max-w-full">
       <FooterLinkPair
         title="Social"
         link="https://www.linkedin.com/in/jeff--campbell"
