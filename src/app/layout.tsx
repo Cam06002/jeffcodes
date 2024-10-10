@@ -19,10 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta property='og:title' content='Jeff Codes'/>
-        <meta property='og:image' content='../../public/images/colorCode.png'/>
-        <meta property='og:description' content='Jeff Campbell - Portfolio'/>
-        <meta property='og:url' content='https://jeffcodes.vercel.app'/>
       </Head>
       <body className="flex flex-col h-screen w-screen bg-black">
         <Header />
