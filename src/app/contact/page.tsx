@@ -16,6 +16,9 @@ const Contact: FC = () => {
 
   function onSubmit(data: FormData) {
     SendEmail(data);
+    data.email = "";
+    data.message = "";
+    data.subject = "";
   }
 
   return(
