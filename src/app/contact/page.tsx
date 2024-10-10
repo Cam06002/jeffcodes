@@ -1,6 +1,6 @@
 'use client';
 
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import SendEmail from '../api/email/send-email';
 
@@ -12,12 +12,22 @@ export type FormData = {
 };
 
 const Contact: FC = () => {
-  const { register, handleSubmit, reset } = useForm<FormData>();
+  const { 
+    register, 
+    handleSubmit, 
+    reset, 
+    formState } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
     SendEmail(data);
-    reset();
   }
+
+  useEffect(() => {
+    if (formState.isSubmitSuccessful) {
+      reset();
+    }
+  }, [formState, reset])
+
 
   return(
     <div className="w-full h-full p-8 md:p-12 flex flex-col text-white">
