@@ -2,7 +2,7 @@
 
 import { FC } from 'react';
 import { useForm } from 'react-hook-form';
-import SendEmail from './sendEmail';
+import SendEmail from '../api/email/send-email';
 
 
 export type FormData = {

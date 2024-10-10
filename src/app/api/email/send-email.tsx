@@ -1,7 +1,7 @@
-import { FormData } from "./page";
+import { FormData } from "../../contact/page";
 
 export default function SendEmail(data: FormData){
-  const apiEndpoint = '/contact';
+  const apiEndpoint = '/api/email';
 
   fetch(apiEndpoint, {
     method: 'POST',
