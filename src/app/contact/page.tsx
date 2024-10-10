@@ -12,13 +12,11 @@ export type FormData = {
 };
 
 const Contact: FC = () => {
-  const { register, handleSubmit } = useForm<FormData>();
+  const { register, handleSubmit, reset } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
     SendEmail(data);
-    data.email = "";
-    data.message = "";
-    data.subject = "";
+    reset();
   }
 
   return(
@@ -27,6 +25,7 @@ const Contact: FC = () => {
       <form 
         className="flex flex-col"
         onSubmit={handleSubmit(onSubmit)}
+        id='emailForm'
       >
         <div className="flex md:flex-row align-middle my-2">
           <label 
