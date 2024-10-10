@@ -1,6 +1,6 @@
 'use client';
 
-import { FC, useEffect } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import SendEmail from '../api/email/send-email';
 
@@ -18,8 +18,11 @@ const Contact: FC = () => {
     reset, 
     formState } = useForm<FormData>();
 
+  const [showThankYou, setShowThankYou] = useState<boolean>(false);
+
   function onSubmit(data: FormData) {
     SendEmail(data);
+    setShowThankYou(true);
   }
 
   useEffect(() => {
@@ -31,7 +34,7 @@ const Contact: FC = () => {
 
   return(
     <div className="w-full h-full p-8 md:p-12 flex flex-col text-white">
-      <h3 className="text-align-center text-3xl font-bold mb-4 md:mb-8">Contact</h3>
+      {!showThankYou&&<><h3 className="text-align-center text-3xl font-bold mb-4 md:mb-8">Contact</h3>
       <form 
         className="flex flex-col"
         onSubmit={handleSubmit(onSubmit)}
@@ -67,7 +70,12 @@ const Contact: FC = () => {
           {...register('message', {required: true})}
         />
         <button className="bg-sky-300 font-bold text-black shadow w-fit mt-4 p-2 rounded">Submit</button>
-      </form>
+      </form> </>}
+      
+      {showThankYou&&<>
+        <h3 className="text-align-center text-3xl font-bold mb-4 md:mb-8">Thank You for Reaching Out</h3>
+        <p>I'll respond to you as soon as I can!</p>
+      </>}
     </div>
   )
 }

@@ -9,9 +9,9 @@ export default function SendEmail(data: FormData){
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
-    .then((response) => {
-      alert(response.message);
-    })
+    // .then((response) => {
+    //   alert(response.message);
+    // })
     .catch((err) => {
       alert(err);
     });
