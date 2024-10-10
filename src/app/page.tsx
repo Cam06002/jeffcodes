@@ -13,7 +13,7 @@ export default function Home() {
     <main className="font-Orbitron flex flex-col w-full">
       <head>
         <meta name="title" property='og:title' content='Jeff Codes'/>
-        <meta name="image" property='og:image' content='https://jeffcodes.vercel.app/_next/static/media/colorCode.png'/>
+        <meta name="image" property='og:image' content='https://jeffcodes.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcolorCode.3d4a7aa1.png&w=3840&q=75'/>
         <meta name="description" property='og:description' content='Check out my portfolio website! A brief overview of my skills, projects, and experience.'/>
         <meta name="url" property='og:url' content='https://jeffcodes.vercel.app'/>
       </head>
