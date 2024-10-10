@@ -6,13 +6,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 export const metadata: Metadata = {
-  openGraph: {
   title: "Jeff Codes",
   description: "Jeff Campbell - Portfolio",
-  url: "https://jeffcodes.vercel.app",
-  siteName: 'Jeff Codes',
-  type: "website"
-  }
 };
 
 export default function RootLayout({
@@ -24,6 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property='og:title' content='Jeff Codes'/>
+        <meta property='og:image' content='../../public/images/colorCode.png'/>
+        <meta property='og:description' content='Jeff Campbell - Portfolio'/>
+        <meta property='og:url' content='https://jeffcodes.vercel.app'/>
       </Head>
       <body className="flex flex-col h-screen w-screen bg-black">
         <Header />
