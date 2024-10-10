@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: "Jeff Codes",
   description: "Jeff Campbell - Portfolio",
   url: "https://jeffcodes.vercel.app",
-  siteName: 'Jeff Codes'
+  siteName: 'Jeff Codes',
+  type: "website"
   }
 };
 
