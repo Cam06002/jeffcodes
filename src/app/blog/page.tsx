@@ -8,7 +8,7 @@ export default async function Home() {
     <div className="grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-16 my-8 mx-8">
       {result.posts.map((post) => (
         <div className="break-words" key={post.id}>
-          <Link href={`/${post.slug}`}>
+          <Link href={`/blog/${post.slug}`}>
             <div className="aspect-[16/9] relative">
               {post.image ? (
                 <Image
