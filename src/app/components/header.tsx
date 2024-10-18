@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaEnvelope } from "react-icons/fa";
-import { ImBlog } from "react-icons/im";
+// import { ImBlog } from "react-icons/im";
 
 export default function Header() {
   const openBracket = "<";
@@ -23,10 +23,10 @@ export default function Header() {
         >{titleHead}</Link>
       </div>
       <div className="flex">
-        <Link 
+        {/* <Link 
           className="pl-4 text-3xl font-bold"
           href={"./blog"}
-        ><ImBlog /></Link>
+        ><ImBlog /></Link> */}
         <Link 
           className="pl-4 text-3xl font-bold"
           href={"./contact"}
