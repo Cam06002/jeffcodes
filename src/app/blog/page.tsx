@@ -4,6 +4,8 @@ import Link from "next/link";
 
 export default async function Home() {
   const result = await wisp.getPosts({ limit: 6 });
+  console.log(result);
+
   return (
     <div className="grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-16 my-8 mx-8">
       {result.posts.map((post) => (
@@ -17,9 +19,7 @@ export default async function Home() {
                   src={post.image}
                   fill
                 />
-              ) : (
-                <img src="https://placehold.co/600x400" />
-              )}
+              ) : null}
             </div>
           </Link>
           <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">

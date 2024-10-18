@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/nodemailer": "^6.4.16",
     "@wisp-cms/client": "^0.0.20",
-    "next": "14.2.13",
+    "next": "^14.2.15",
     "nodemailer": "^6.9.15",
     "react": "^18",
     "react-dom": "^18",

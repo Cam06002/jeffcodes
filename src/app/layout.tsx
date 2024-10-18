@@ -22,11 +22,11 @@ export default function RootLayout({
       </Head>
       <body className="flex flex-col h-screen w-screen bg-black">
         <Header />
-        <main className='flex flex-row flex-grow m-2 max-w-full max-h-full rounded overflow-auto [&::-webkit-scrollbar]:[width:10px]
+        <div className='flex flex-row flex-grow m-2 max-w-full max-h-full rounded overflow-auto [&::-webkit-scrollbar]:[width:10px]
             [&::-webkit-scrollbar-thumb]:bg-sky-300
             overflow-scroll"'>
           {children}
-        </main>
+        </div>
         <Footer />
       </body>
     </html>
