@@ -5,7 +5,7 @@ import Link from "next/link";
 export default async function Home() {
   const result = await wisp.getPosts({ limit: 6 });
   return (
-    <div className="grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-16 my-8">
+    <div className="grid grid-cols-1 gap-16 lg:gap-28 md:grid-cols-2 md:my-16 my-8 mx-8">
       {result.posts.map((post) => (
         <div className="break-words" key={post.id}>
           <Link href={`/${post.slug}`}>
