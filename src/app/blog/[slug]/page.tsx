@@ -1,8 +1,5 @@
 import { wisp } from "@/lib/wisp";
 
-interface Params {
-  slug: string;
-}
 export default async function BlogPost(
   {params}: {params:{ slug: string }},
 ) {
@@ -14,7 +11,7 @@ export default async function BlogPost(
   return (
     <div className="m-8">
       <div className="prose lg:prose-xl dark:prose-invert mx-auto lg:prose-h1:text-4xl mb-10 lg:mt-20 break-words">
-        <h1>{title}</h1>
+        <h1 className="text-xl mb-4">{title}</h1>
         <div
           className="blog-content mx-auto"
           dangerouslySetInnerHTML={{

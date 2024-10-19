@@ -15,7 +15,7 @@ export default async function Home() {
               {post.image ? (
                 <Image
                   alt={post.title}
-                  className="object-cover"
+                  className="h-20 w-20"
                   src={post.image}
                   fill
                 />
@@ -24,7 +24,7 @@ export default async function Home() {
           </Link>
           <div className="grid grid-cols-1 gap-3 md:col-span-2 mt-4">
             <h2 className="font-sans font-semibold tracking-tighter text-primary text-2xl md:text-3xl">
-              <Link href={`/${post.slug}`}>{post.title}</Link>
+              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
             </h2>
             <div className="prose lg:prose-lg italic tracking-tighter text-muted-foreground">
               {(post.publishedAt || post.updatedAt).toLocaleString()}
