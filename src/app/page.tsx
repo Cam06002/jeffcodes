@@ -10,7 +10,7 @@ import Hero from "./components/hero";
 
 export default function Home() {
   return (
-    <main className="font-Orbitron flex flex-col w-full">
+    <div className="font-Orbitron flex flex-col w-full">
       <head>
         <meta name="title" property='og:title' content='Jeff Codes'/>
         <meta name="image" property='og:image' content='https://jeffcodes.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FcolorCode.3d4a7aa1.png&w=3840&q=75'/>
@@ -37,6 +37,6 @@ export default function Home() {
           <Experience />
         </div>
       </div>
-    </main>
+    </div>
   );
 }
