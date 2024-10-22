@@ -7,7 +7,7 @@ export default async function BlogPost(
   console.log(result);
   
   if (!result.post) return null;
-  const { title, publishedAt, createdAt, content, tags } = result.post;
+  const { title, content, tags } = result.post;
   return (
     <div className="m-8  flex flex-col w-full font-Orbitron">
       <h1 className="text-2xl md:text-3xl font-bold align-middle justify-center flex mb-8 mx-6 text-gray-900/50 bg-gradient-to-r from-sky-300 to-red-300 underlined p-8">
