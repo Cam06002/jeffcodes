@@ -9,8 +9,10 @@ export default async function BlogPost(
   if (!result.post) return null;
   const { title, publishedAt, createdAt, content, tags } = result.post;
   return (
-    <div className="m-8  flex flex-col w-full">
-      <h1 className="text-2xl md:text-3xl font-bold align-middle justify-center flex mb-8 text-white px-8">{title}</h1>
+    <div className="m-8  flex flex-col w-full font-Orbitron">
+      <h1 className="text-2xl md:text-3xl font-bold align-middle justify-center flex mb-8 mx-6 text-gray-900/50 bg-gradient-to-r from-sky-300 to-red-300 underlined p-8">
+        {title}
+      </h1>
       <div
         className="prose text-white max-w-none px-8 text-justify"
         dangerouslySetInnerHTML={{
@@ -21,11 +23,6 @@ export default async function BlogPost(
         {tags.map((tag, key) => (
           <span key={key}>#{tag.name}</span>
         ))}
-      </div>
-      <div className="text-sm opacity-40 mt-4">
-        {Intl.DateTimeFormat("en-US").format(
-          new Date(publishedAt || createdAt),
-        )}
       </div>
     </div>
   );
