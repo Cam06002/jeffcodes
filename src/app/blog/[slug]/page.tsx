@@ -1,6 +1,8 @@
-export const dynamic = "force-dynamic";
-export const revalidate = 60;
+'use client'
 
+export const dynamic = "force-dynamic";
+
+import sanitize, { defaults } from "sanitize-html";
 import { wisp } from "@/lib/wisp";
 
 export default async function BlogPost(
@@ -11,6 +13,44 @@ export default async function BlogPost(
   
   if (!result.post) return null;
   const { title, content, tags } = result.post;
+
+  const sanitizedContent = sanitize(content, {
+    allowedTags: [
+      "b",
+      "i",
+      "em",
+      "strong",
+      "a",
+      "img",
+      "h1",
+      "h2",
+      "h3",
+      "code",
+      "pre",
+      "p",
+      "li",
+      "ul",
+      "ol",
+      "blockquote",
+      "td",
+      "th",
+      "table",
+      "tr",
+      "tbody",
+      "thead",
+      "tfoot",
+      "small",
+      "div",
+      "iframe",
+    ],
+    allowedAttributes: {
+      ...defaults.allowedAttributes,
+      "*": ["style"],
+      iframe: ["src", "allowfullscreen", "style"],
+    },
+    allowedIframeHostnames: ["www.youtube.com", "www.youtube-nocookie.com"],
+  });
+
   return (
     <div className="m-8  flex flex-col w-full font-Orbitron">
       <h1 className="text-2xl md:text-3xl font-bold align-middle justify-center flex mb-8 mx-6 text-gray-900/50 bg-gradient-to-r from-sky-300 to-red-300 underlined p-8">
@@ -19,7 +59,7 @@ export default async function BlogPost(
       <div
         className="prose text-white max-w-none px-8 text-justify"
         dangerouslySetInnerHTML={{
-          __html: content,
+          __html: sanitizedContent,
         }}
       />
       <div className="mt-10 opacity-40 text-sm">
