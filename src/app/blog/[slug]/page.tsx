@@ -52,12 +52,12 @@ export default async function BlogPost(
   });
 
   return (
-    <div className="m-8  flex flex-col w-full font-Orbitron">
+    <div className="m-8 flex flex-col w-full font-Orbitron">
       <h1 className="text-2xl md:text-3xl font-bold align-middle justify-center flex mb-8 mx-6 text-gray-900/50 bg-gradient-to-r from-sky-300 to-red-300 underlined p-8">
         {title}
       </h1>
       <div
-        className="prose text-white max-w-none px-8 text-justify"
+        className="prose max-w-none px-8 text-justify !text-white !decoration-white"
         dangerouslySetInnerHTML={{
           __html: sanitizedContent,
         }}
